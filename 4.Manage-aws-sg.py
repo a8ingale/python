@@ -186,3 +186,31 @@ def default_sg_remaining_rules_report(region, security_group_id):
         )
 
 default_sg_flayer()
+
+
+
+
+
+
+
+########################  reqd JSON ######################
+'''
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:DescribeSecurityGroupRules",
+                "ec2:CreateTags",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:DescribeRegions",
+                "ec2:DescribeSecurityGroups"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+'''
